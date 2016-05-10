@@ -1,1 +1,72 @@
-#1
+1.
+Summary: User registration with 1 symbol as "First Name" & "Last Name" is allowed
+Description: User registration with 1 symbol as "First Name" & "Last Name" is allowed
+
+Steps to reproduce:
+1. Go to the main app page.
+2. Click on the "Sign Up" button on the navbar.
+3. Enter (without "") "O" to the "First Name" field.
+    Enter (without "") "P" to the "Last Name" field.
+    Enter (without "") "test22@test.test" to the "Username(Email)" field.
+    Enter (without "") "asdffdsA1" to the "Password" field.
+4. Click on the "Sign Up" button.
+Expected result: Error message displayed that it's not possible to register user with less than 1 symbol as first name & as last name(etc.), user was not created.
+Actual result: user was successfully created and logged in the system(app).
+
+2.
+Summary: The user registration only with special symbols as "First Name" or "Last Name" is allowed.
+Description: User registration only with special symbols as "First Name" or "Last Name" is allowed.
+
+Steps to reproduce:
+
+1. Go to the main app page.
+2. Click on the "Sign Up" button on the navbar.
+3. Enter (without "") "#" to the "First Name" field.
+Enter (without "") "$" to the "Last Name" field.
+Enter (without "") "test23@test.test" to the "Username(Email)" field.
+Enter (without "") "asdffdsA1" to the "Password" field.
+4. Click on the "Sign Up" button.
+Expected result: Error message displayed that it's not possible to register user with special symbols as first name & as last name(etc.), user was not created.
+Actual result: user was successfully created and logged in the system(app).
+
+3.
+Summary: Its' allowed to register multiple users with the same e-mail.
+Description: Its' allowed to register multiple users with the same e-mail.
+
+Steps to reproduce:
+1. Go to the main app page.
+2. Click on the "Sign Up" button on the navbar.
+3. Enter (without "") "I" to the "First Name" field.
+Enter (without "") "V" to the "Last Name" field.
+Enter (without "") "test22@test.test" to the "Username(Email)" field.
+Enter (without "") "asdffdsA1" to the "Password" field.
+4. Click on the "Sign Up" button (You are redirecting to the main app page as you are logged in).
+5. Click on the users name on the nav bar. (list appeared with options)
+6. Click on the "Signout" button.
+7. Repeat steps 2-4.
+Expected result: Error message displayed that it's not possible to register multiple users with the same email or that U can not use this email to register cause it's already using AND user was not created.
+Actual result: user was successfully created and logged in the system(app).
+
+4.
+Summary: The user shows as logged in if make logout and return to the previous page (using browser)
+Description: User is still logged in after logout and returning to the previous page in browser.
+
+Steps to reproduce:
+1. Go to the main app page.
+2. Click "Sign In" button.
+3. Enter (without "") "test@test.test" to the "Username(email)" fied, "123456" to the "Password" field and click "Sign In" button. (You are logged in).
+4. Click "Sign out" button on the navbar. (You are not logged in.)
+5. Click on the browser button "Return to the previous page".
+Expected result: user is not logged in and "Sign In" form appears.
+Actual result: user shows as logged in.
+
+5.
+Summary: Cannot open "Learn more" page
+Description: When I click on "Learn more" button I can't open needed page, because of failing to connect server. See screenshots.
+
+Steps to reproduce:
+1. Open the main page.
+2. Click on "Learn more" button.
+Expected result: I can open this page.
+Actual result: I cannot open this page.
+
