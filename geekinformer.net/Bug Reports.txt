@@ -133,7 +133,7 @@ Summary: Registration of an invalid e-mail (with forbidden special symbols in lo
 Description: Registration of an invalid e-mail (with forbidden special symbols in local part) does not generate the appropriate message
 
 Steps to reproduce:
-1. Go to http://geekinformer.net/
+1. Open the main page.
 2.Click on the button "Регистрация" in the right upper corner.
 3.In the pop-up window in the field "E-mail адрес" type the following e-mail address len>a@mail.ru  
 4.Fill in your name in the field "Имя" and your password in the field "Пароль", tick on "Я не робот" 
@@ -144,13 +144,26 @@ Actual result: The website is constantly loading.
 
 11.
 Summary: Registration of an invalid e-mail (local part of which has 2 periods) does not generate the appropriate message
-Description:Registration of an invalid e-mail (local part of which has 2 periods) does not generate the appropriate message
+Description: Registration of an invalid e-mail (local part of which has 2 periods) does not generate the appropriate message
 
 Steps to reproduce:
-1. Go to http://geekinformer.net/
+1.Open the main page.
 2.Click on the button "Регистрация" in the right upper corner.
 3.In the pop-up window in the field "E-mail адрес" type an e-mail address with  2 periods (.) Firstly, at the beginning and at the end of the local part of the e-mail (.lena.@mail.ru), secondly - 2 periods in the local part in a row (len..a@mail.ru).
 4.Fill in your name in the field "Имя" and your password in the field "Пароль", tick on "Я не робот".
 5. Click the button "Регистрация".
 Expected result: The message "E-mail is invalid" appears.
 Actual result: The website is constantly loading.
+
+12.
+Summary: Registration with an e-mail address which local part is longer than 64 characters is possible
+Description: Registration with an e-mail address which local part is longer than 64 characters is possible
+Steps to reproduce:
+
+1.Open the main page.
+2.Click on the button "Регистрация" in the right upper corner.
+3.In the pop-up window in the field "E-mail адрес" type an e-mail address the local part of which contains more than 64 characters.
+4.Fill in the name in the field "Имя" and your password in the field "Пароль", tick on "Я не робот".
+5. Click on the button "Регистрация".
+Expected result: The message "E-mail is invalid" appears.
+Actual result: The system registers a new user.
