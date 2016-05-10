@@ -3,7 +3,7 @@ Summary: Registration form - able to create account with email which contains on
 Description: Able to create account with  email which contains only special symbols (for example, ##@gmail.com, ___@gmail.com) using UI account creation form.
 
 Steps to reproduce:
-1. Open http://geekinformer.net/
+1. Open the main page
 2. Click on login button and select "Регистрация"
 3. To field Имя enter "qwerty1"
 4. To field Еmail адрес enter ___@gmail.com
@@ -34,7 +34,7 @@ This button is smaller than the others in that list.
 Summary: Email with registration does not coming
 Description: Email with registration does not coming
 Steps to reproduce:
-1 Go to Geekinformer.net
+1 Open the main page
 2 Right corner click "Регистрация"
 3 Fill the fields "E-mail адрес" and "Пароль" with valid info
 4 Click "Регистрация"
@@ -48,7 +48,7 @@ Summary: Able to create account with incorrect domain name
 Description:Using registration form u able to create account with incorrect domain name(for example: 1@42141wafwaf412414.wqrqrawawfawfawffawf)
 
 Steps to reproduce:
-1. Open http://geekinformer.net/
+1. Open the main page
 2. Click on login button and select "Регистрация"
 3. To field Имя enter qwerty123
 4. To field Еmail адрес enter 1@gaeggaew.geagawwgeaewgagweea
@@ -60,3 +60,97 @@ Shows message that email is incorrect and account not created
 Actual result:
 Shown window Регистрация прошла успешно
 
+5.
+Summary: Repeated email in login form
+Description: Repeated email in login form lead to app crash
+
+Steps to reproduce:
+1. Open the main page
+2. Find at the right top corner button for Log in
+3. Press the button "Register" to create new account
+4. Type your own email, name, password. Done
+5. Now try to register one more account
+6. Type the same email, another name and password.
+Expected result: 
+System should show us alert message
+Actual result: 
+System is loading for a long time with no results, need to refresh web page.
+
+6.
+Summary: Search on Russian language
+Description: Search on Russian language doesn't work
+
+Steps to reproduce:
+1. Open the main page
+2. Type "1) телефон, 2) планшет, 3) видео" to the search field.
+Expected result: 
+Search successful
+Actual result:
+Search doesnt work with this words.
+
+7.
+Summary: Unable to open links in new tab
+Description: Unable to open links in new tab neither by clicking on the link with the right mouse button, nor by clicking with the wheel mouse button. 
+
+Steps to reproduce:
+1. Open the main page.
+2. Choose any link from all lists and categories.
+3. Click on the link with the right mouse button and search for the missing option.
+4. Click on the link with the wheel mouse button.
+Expected result: 
+2 new tabs with chosen link.
+Actual result:
+No new tabs with chosen link.
+
+8.
+Summary: Mistake in the word in description on the main page
+Description: Mistake in the word in description on the main page.
+
+Steps to reproduce:
+1. Open the main page.
+2. Scroll it down till "Новые блогеры" category.
+3. Look for link "Стас (Ай, как просто!)" and description under it.
+Expected result:
+There should be a word "гаджет" instead of "гаджэт".
+Actual result:
+There is a word "гаджэт" in the description.
+
+9.
+Summary: Multiple mistakes in descriptions on the main page.
+Description: Multiple mistakes in descriptions at the bottom of the main page. At some places dots at the end of sentences are missing. In other places descriptions of  links are too long and cannot be shown propely. All mistakes were marked on the screenshot (see in attachment).
+
+Steps to reproduce:
+1. Open the main page.
+2. Scroll down till "Новые СМИ" and "Новые блогеры" categories.
+3. Look for mistakes. Use attachment if you cannot notice them.
+Expected result:
+All descriptions are made according to orthography rules and have proper length.
+Actual result:
+Multiple mistakes in orthography in pointed categories. Descriptions of links are too long and cannot be shown propely.
+
+10.
+Summary: Registration of an invalid e-mail (with forbidden special symbols in local part) does not generate the appropriate message
+Description: Registration of an invalid e-mail (with forbidden special symbols in local part) does not generate the appropriate message
+
+Steps to reproduce:
+1. Go to http://geekinformer.net/
+2.Click on the button "Регистрация" in the right upper corner.
+3.In the pop-up window in the field "E-mail адрес" type the following e-mail address len>a@mail.ru  
+4.Fill in your name in the field "Имя" and your password in the field "Пароль", tick on "Я не робот" 
+5. Click the button "Регистрация".
+6. Perform the registration procedure again, inserting each of the following special symbols in the local part of the e-mail address (in turns): "(),:;<@[ \ ] and space.
+Expected result: The message "E-mail is invalid" appears.
+Actual result: The website is constantly loading.
+
+11.
+Summary: Registration of an invalid e-mail (local part of which has 2 periods) does not generate the appropriate message
+Description:Registration of an invalid e-mail (local part of which has 2 periods) does not generate the appropriate message
+
+Steps to reproduce:
+1. Go to http://geekinformer.net/
+2.Click on the button "Регистрация" in the right upper corner.
+3.In the pop-up window in the field "E-mail адрес" type an e-mail address with  2 periods (.) Firstly, at the beginning and at the end of the local part of the e-mail (.lena.@mail.ru), secondly - 2 periods in the local part in a row (len..a@mail.ru).
+4.Fill in your name in the field "Имя" and your password in the field "Пароль", tick on "Я не робот".
+5. Click the button "Регистрация".
+Expected result: The message "E-mail is invalid" appears.
+Actual result: The website is constantly loading.
