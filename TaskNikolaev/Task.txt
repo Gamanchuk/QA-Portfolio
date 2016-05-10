@@ -1,0 +1,1652 @@
+﻿Task #1
+Begin 16.00 15.04.2016
+
+Комбинация всех значений параметров
+№	пол	возраст		дети
+1	мужчина	до 25		детей нет
+2	женщина	до 25		детей нет
+3	мужчина	25-60		детей нет
+4	женщина	25-60		детей нет
+5	мужчина	старше 60	детей нет
+6	женщина	старше 60	детей нет
+7	мужчина	до 25		дети есть
+8	женщина	до 25		дети есть
+9	мужчина	25-60		дети есть
+10	женщина	25-60		дети есть
+11	мужчина	старше 60	дети есть
+12	женщина	старше 60	дети есть
+
+Комбинация уникальных пар значений параметров
+№	пол	возраст		дети
+1	мужчина	до 25		детей нет
+2	женщина	до 25		дети есть
+3	мужчина	25-60		дети есть
+4	женщина	25-60		детей нет
+5	мужчина	старше 60	детей нет
+6	женщина	старше 60	дети есть
+
+End 16.20 15.04.2016
+
+Task #2
+Begin 16.20 15.04.2016
+1.
+
+Summary: wrong name Date inset
+Deskription: Date inset have wrong name
+Steps to reproduce:
+1.open Date Picker Properties form
+Expected result: "Date" inset have name "Date"
+Actual result: "Date" inset have name "Data"
+Severity: low
+Ptiority: P3
+
+2.
+Summary: empty name in third inset
+Deskription: third inset have't name
+Steps to reproduce:
+1.open Date Picker Properties form
+Expected result: third inset have name
+Actual result: third inset haven't name
+Severity: low
+Ptiority: P1
+
+3.
+Summary: no alignment in "Field name" and "Data Type" titles
+Deskription: no alignment in "Field name" and "Data Type" titles
+Steps to reproduce:
+1.open Date Picker Properties form
+Expected result: "Field name" and "Data Type" titles have alignment 
+Actual result: "Field name" and "Data Type" titles haven't alignment
+Severity: trivial
+Ptiority: P3
+
+4.
+Summary: no alignment in "Field name" and "Data Type" fields
+Deskription: no alignment in "Field name" and "Data Type" fields
+Steps to reproduce:
+1.open Date Picker Properties form
+Expected result: "Field name" and "Data Type" fields have alignment 
+Actual result: "Field name" and "Data Type" fields haven't alignment
+Severity: trivial
+Ptiority: P3
+
+5.
+Summary: "Default value on Date" title have different font size
+Deskription: "Default value on Date" title have different font size
+Steps to reproduce:
+1.open Date Picker Properties form
+Expected result: "Default value on Date" title have equal font size
+Actual result: "Default value on Date" title have different font size
+Severity: trivial
+Ptiority: P3
+
+6.
+Summary: "Default value on Date" have value localization bug in the navigation
+Deskription: "Default value on Date" navigation have value in Ukrainian, but shoult be in English
+Steps to reproduce:
+1.open Date Picker Properties form
+Expected result: "Default value on Date" navigation value in English
+Actual result: "Default value on Date" navigation value in Ukrainian
+Severity: trivial
+Ptiority: P2
+
+7.
+Summary: "Data Type" field havn't colon
+Deskription: "Data Type" field havn't colon
+Steps to reproduce:
+1.open Date Picker Properties form
+Expected result: "Data Type" field have colon
+Actual result: "Data Type" field haven't colon
+Severity: trivial
+Ptiority: P3
+
+8.
+Summary: "Example" have wrong name
+Deskription: "Example" have wrong name
+Steps to reproduce:
+1.open Date Picker Properties form
+Expected result: "Example" have name "Example"
+Actual result: "Example" have name "Eample"
+Severity: trivial
+Ptiority: P3
+
+9.
+Summary: "Example" haven't example
+Deskription: "Example" haven't example
+Steps to reproduce:
+1.open Date Picker Properties form
+Expected result: "Example" haven example
+Actual result: "Example" haven't example
+Severity: trivial
+Ptiority: P3
+
+10.
+Summary: Buttons "Ok","Cancel" and "Apply" have different alligment
+Deskription: Buttons "Ok","Cancel" and "Apply" have different alligment
+Steps to reproduce:
+1.open Date Picker Properties form
+Expected result: Buttons "Ok","Cancel" and "Apply" have equal alligment
+Actual result: Buttons "Ok","Cancel" and "Apply" have different alligment
+Severity: trivial
+Ptiority: P3
+
+11.
+Summary: Button "Ok" have upercase font
+Deskription: Button "Ok" have upercase font
+Steps to reproduce:
+1.open Date Picker Properties form
+Expected result: Button "Ok" have letter "O" in upercase, letter "k" in lowercase
+Actual result:Button "Ok" have upercase font
+Severity: trivial
+Ptiority: P3
+
+
+12.
+Summary: Button "Ok" active when checkbox "Cannot be blank" not ticked
+Deskription: Button "Ok" active when checkbox "Cannot be blank" not ticked
+Steps to reproduce:
+1.open Date Picker Properties form
+Expected result: Button "Ok" should be passive
+Actual result:Button "Ok" active
+Severity: normal
+Ptiority: P2
+
+18.00 Pause
+
+13.00 18.04.2016 Start
+
+Task 3.
+
+1.
+Summary: positiv test
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+2.
+Summary:negative test
+Steps:
+1.open "Complete your personal information" form
+click "continue" button
+Expected result: should show message "Please fill in required fields"
+
+3.
+Summary: empty "Recruiter ID" field in ""Recruiter ID" and Suffix" fields
+Steps:
+1.open "Complete your personal information" form
+type "Recruiter ID" = "", , "Suffix" = "1", "Unit ID" = "1", "Suffix" = "1"
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk","Postal Code"="04868", leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: should show message "Please enter "Recruiter ID""
+
+4.
+Summary: empty "Suffix" field in ""Recruiter ID" and Suffix" fields
+Steps:
+1.open "Complete your personal information" form
+type "Recruiter ID" = "1", , "Suffix" = "", "Unit ID" = "1", "Suffix" = "1"
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk","Postal Code"="04868", leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: should show message "Please enter "Suffix""
+
+5.
+Summary: empty "Unit ID" field in ""Unit ID" and Suffix" fields
+Steps:
+1.open "Complete your personal information" form
+type "Recruiter ID" = "1", , "Suffix" = "1", "Unit ID" = "", "Suffix" = "1"
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868",leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: should show message "Please enter "Unit ID"
+
+6.
+Summary: empty "Suffix" field in ""Unit ID" and Suffix" fields
+Steps:
+1.open "Complete your personal information" form
+type "Recruiter ID" = "1", , "Suffix" = "1", "Unit ID" = "1", "Suffix" = ""
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk","Postal Code"="04868", leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: should show message "Please enter "Suffix""
+
+7.
+Summary: empty "First Name" field in "Personal Informatio" section
+Steps:
+1.open "Complete your personal information" form
+type "Recruiter ID" = "1", , "Suffix" = "1", "Unit ID" = "1", "Suffix" = "1"
+"First Name" = "", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk","Postal Code"="04868", leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: should show message "Please enter "First Name""
+
+8.
+Summary: empty "Last Name" field in "Personal Informatio" section
+Steps:
+1.open "Complete your personal information" form
+type "Recruiter ID" = "1", , "Suffix" = "1", "Unit ID" = "1", "Suffix" = "1"
+"First Name" = "Aleksey", "Last Name"="", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk","Postal Code"="04868", leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: should show message "Please enter "Last Name""
+
+9.
+Summary: empty "Birth Date" field in "Personal Informatio" section
+Steps:
+1.open "Complete your personal information" form
+type "Recruiter ID" = "1", , "Suffix" = "1", "Unit ID" = "1", "Suffix" = "1"
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = ""
+"Street"="Mira", "City" = "Ilyichevsk","Postal Code"="04868", leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: should show message "Please enter "Birth Date""
+
+10.
+Summary: empty "Street" field in "Registration Address" section
+Steps:
+1.open "Complete your personal information" form
+type "Recruiter ID" = "1", , "Suffix" = "1", "Unit ID" = "1", "Suffix" = "1"
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+type "Street"="", "City" = "Ilyichevsk", "Postal Code"="04868", leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: should show message "Please enter "Street""
+
+11.
+Summary: empty "City" field in "Registration Address" section
+Steps:
+1.open "Complete your personal information" form
+type "Recruiter ID" = "1", , "Suffix" = "1", "Unit ID" = "1", "Suffix" = "1"
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "","Postal Code"="04868", leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: should show message "Please enter "City""
+
+12.
+Summary: empty "Postal Code" field in "Registration Address" section
+Steps:
+1.open "Complete your personal information" form
+type "Recruiter ID" = "1", , "Suffix" = "1", "Unit ID" = "1", "Suffix" = "1"
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="", leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: should show message "Please enter "Postal Code""
+
+13.
+Summary: default value "Coutry" dropbox in "Registration Address" section
+Steps:
+1.open "Complete your personal information" form
+type "Recruiter ID" = "1", , "Suffix" = "1", "Unit ID" = "1", "Suffix" = "1"
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+type "Street"="", "City" = "Ilyichevsk", Postal Code"="04868"
+leave Czech Republic" in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+14.
+Summary: not checked "Do yuo have selling Mary Kay products?" checkbox in "Family information" section
+Steps:
+1.open "Complete your personal information" form
+type "Recruiter ID" = "1", , "Suffix" = "1", "Unit ID" = "1", "Suffix" = "1"
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868", leave "Czech Republic" value in "Country" droplist
+tick "Yes" in "Do you have relatives employed by Mary Kay Cosmetics Czech Republic?" and "Have you ever been a Mary Kay Independenty Beauty Consultant?" in "Family information" checkboxes
+click "continue" button
+Expected result: should show message "Please answer the question: "Do yuo have a spouse selling Mary Kay products?""
+
+15.
+Summary: not checked "Do you have relatives employed by Mary Kay Cosmetics Czech Republic?" checkbox in "Family information" section
+Steps:
+1.open "Complete your personal information" form
+type "Recruiter ID" = "1", , "Suffix" = "1", "Unit ID" = "1", "Suffix" = "1"
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868", leave "Czech Republic" value in "Country" droplist
+tick "Yes" in "Do you have selling Mary Kay products?" and "Have you ever been a Mary Kay Independenty Beauty Consultant?" in "Family information" checkboxes
+click "continue" button
+Expected result: should show message "Please answer the question: "Do you have relatives employed by Mary Kay Cosmetics Czech Republic?""
+
+16.
+Summary: not checked "Have you ever been a Mary Kay Independenty Beauty Consultant?" checkbox in "Family information" section
+Steps:
+1.open "Complete your personal information" form
+2.type "Recruiter ID" = "1", , "Suffix" = "1", "Unit ID" = "1", "Suffix" = "1"
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868", leave "Czech Republic" value in "Country" droplist
+3.tick "Yes" in "Do you have selling Mary Kay products?" and "Do you have relatives employed by Mary Kay Cosmetics Czech Republic?" in "Family information" checkboxes
+click "continue" button
+Expected result: should show message "Please answer the question: "Have you ever been a Mary Kay Independenty Beauty Consultant?""
+
+
+
+17.00 Pause
+
+
+
+11.00 19.04.2016 Start
+
+
+
+
+--------------------------------------------------------
+
+
+Test Suite for fields "Recruiter ID and Suffix", "Unit ID and Suffix"
+Specification: "Recruiter ID" and "Unit ID" max length = 256
+											min length = 1
+											only numbers
+											valid value = "12365479"
+				"Suffix"					min length = max length = "2"
+											only numbers
+											valid value = "22"
+1.
+Summary: length "ID" fields(16) 
+Steps:
+1.type specified fields = "1234567890123456"(16), "Suffix"="22"
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+2.
+Summary: length "ID" fields(15)
+Steps:
+1.type specified fields = "123456789012345"(15), "Suffix"="22"
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+3.
+Summary: length "ID" fields(17)
+Steps:
+1.type specified fields = "12345678901234567"(17), "Suffix"="22"
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: should show message "An incorrect values in "ID""
+
+4.
+Summary: length "ID" fields(9)
+Steps:
+1.type specified fields = "123456789"(9), "Suffix"="22"
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result:  screen was changed and personal information was confirmed
+
+5.
+Summary: length "ID" fields(1)
+Steps:
+1.type specified fields = "1"(1), "Suffix"="22"
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result:  screen was changed and personal information was confirmed
+
+6.
+Summary: length "ID" fields(0)
+Steps:
+1.type specified fields = ""(0), "Suffix"="22"
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result:  should show message "An incorrect values in "ID" 
+
+7.
+Summary: validation
+Steps:
+1.type "ID"="12365479" and "Suffix"="22"
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result:  screen was changed and personal information was confirmed
+
+8.
+Summary: validation
+Steps:
+1.type "ID"="12378946" and "Suffix"="22"
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: should show message "An incorrect values in "ID" or "Suffix""
+
+9.
+Summary: validation
+Steps:
+1.type "ID"="111111111" and "Suffix"="00"
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: should show message "An incorrect values in "ID" or "Suffix""
+
+10.
+Summary: validation
+Steps:
+1.type "ID"="12365479" and "Suffix"="00"
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: should show message "An incorrect values in "ID" or "Suffix""
+
+11.
+Summary: validation
+Steps:
+1.type empty "ID" field and empty "Suffix" field 
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: should show message "An incorrect values in "ID" or "Suffix""
+
+12.
+Summary: validation
+Steps:
+1.type "ID"="12365479" and empty "Suffix" field
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: should show message "An incorrect values in "ID" or "Suffix""
+
+13.
+Summary: validation
+Steps:
+1.type empty "ID" and "Suffix"="22"
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: should show message "An incorrect values in "ID" or "Suffix""
+
+14.
+Summary: validation
+Steps:
+1.type "ID" ="<script>alert('123')</script>" and "Suffix"="22" 
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: should show message "An incorrect values in "ID" or "Suffix""
+
+15.
+Summary: validation
+Steps:
+1.type "ID" ="1'; SHOW TABLES;" and "Suffix"="22" 
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: should show message "An incorrect values in "ID" or "Suffix""
+
+16.
+Summary: validation
+Steps:
+1.type "ID" ="<b>Hello</b>" and "Suffix"="22" 
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: should show message "An incorrect values in "ID" or "Suffix""
+
+17.
+Summary: validation
+Steps:
+1.type "ID" ="♣☺♂,“”‘~!@#$%^&*()?>./\<][ /*<!–${code};–>" and "Suffix"="22"
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: should show message "An incorrect values in "ID" or "Suffix""
+
+18.
+Summary: validation
+Steps:
+1.open "Complete your personal information" form
+type "Recruiter ID" ="         " and "Suffix"="22"
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: should show message "An incorrect values in "ID" or "Suffix""
+
+19.
+Summary: validation
+Steps:
+1.type "ID" ="  12365479   ", "Suffix"="22" 
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed, value in "Recruiter ID" should be trimmed.
+
+20.
+Summary: length "Suffix" fields(0) 
+Steps:
+1.type "ID"="12365479", "Suffix"=""(0)
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: "An incorrect values in "ID" or "Suffix""
+
+21.
+Summary: length "Suffix" fields(1) 
+Steps:
+1.type "ID"="12365479", "Suffix"="2"(1)
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: "An incorrect values in "ID" or "Suffix"
+
+22.
+Summary: length "Suffix" fields(2) 
+Steps:
+1.type "ID"="12365479", "Suffix"="21"(2)
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+23.
+Summary: length "Suffix" fields(3) 
+Steps:
+1.type "ID"="12365479", "Suffix"="222"(3)
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: "An incorrect values in "ID" or "Suffix""
+
+24.
+Summary: validation
+Steps:
+1.type "ID" ="12365479" and "Suffix"="<script>alert('123')</script>" 
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: should show message "An incorrect values in "ID" or "Suffix""
+
+25.
+Summary: validation
+Steps:
+1.type "ID" ="12365479" and "Suffix"="1'; SHOW TABLES;" 
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: should show message "An incorrect values in "ID" or "Suffix""
+
+26.
+Summary: validation
+Steps:
+1.type "ID" ="12365479" and "Suffix"="<b>Hello</b>" 
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: should show message "An incorrect values in "ID" or "Suffix""
+
+27.
+Summary: validation
+Steps:
+1.type "ID" ="12365479" and "Suffix"="♣☺♂,“”‘~!@#$%^&*()?>./\<][ /*<!–${code};–>"
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: should show message "An incorrect values in "ID" or "Suffix""
+
+28.
+Summary: validation
+Steps:
+1.open "Complete your personal information" form
+type "Recruiter ID" ="12365479" and "Suffix"="  "
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: should show message "An incorrect values in "ID" or "Suffix""
+
+29.
+Summary: validation
+Steps:
+1.type "ID" ="12365479", "Suffix"="  22  " 
+"First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed, value in "Suffix" should be trimmed.
+
+
+--------------------------------------------------------------------------------------
+
+Test Suite for fields: "First Name", "Last Name", "Street", "City" AS "RequiredText"
+Specification:  max length = 256
+				min length = 1
+				numbers and letters
+				Uppercase and lowercase
+
+1.
+Summary: length "RequiredText" fields(0)
+Steps:
+1.type "Recruiter ID" ="12365479", "Suffix" ="22", 
+"Unit ID"="12365479", "Suffix"="22"
+specified fields = ""(0),
+"Birth Date" = "18.05.1982"
+"Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: incorrect value in "RequiredText" field
+
+2.
+Summary: length "RequiredText" fields(1)
+Steps:
+1.type "Recruiter ID" ="12365479", "Suffix" ="22", 
+"Unit ID"="12365479", "Suffix"="22"
+specified fields = "a"(1),
+"Birth Date" = "18.05.1982"
+"Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+3.
+Summary: length "RequiredText" fields(20)
+Steps:
+1.type "Recruiter ID" ="12365479", "Suffix" ="22", 
+"Unit ID"="12365479", "Suffix"="22"
+specified fields = "aaa.."(20),
+"Birth Date" = "18.05.1982"
+"Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+4.
+Summary: length "RequiredText" fields(254)
+Steps:
+1.type "Recruiter ID" ="12365479", "Suffix" ="22", 
+"Unit ID"="12365479", "Suffix"="22"
+specified fields = "a2f..."(254),
+"Birth Date" = "18.05.1982"
+"Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+5.
+Summary: length "RequiredText" fields(255)
+Steps:
+1.type "Recruiter ID" ="12365479", "Suffix" ="22", 
+"Unit ID"="12365479", "Suffix"="22"
+specified fields = "a2f..."(255), 
+"Birth Date" = "18.05.1982"
+"Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+6.
+Summary: length "RequiredText" fields(256)
+Steps:
+1.type "Recruiter ID" ="12365479", "Suffix" ="22", 
+"Unit ID"="12365479", "Suffix"="22"
+specified fields = "a2f..."(256),
+"Birth Date" = "18.05.1982"
+"Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: incorrect value in "RequiredText" field
+
+7.
+Summary: "RequiredText" validation
+Steps:
+1.type "Recruiter ID" ="12365479", "Suffix" ="22", 
+"Unit ID"="12365479", "Suffix"="22"
+specified fields = "asdf"
+"Birth Date" = "18.05.1982"
+"Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+8.
+Summary: "RequiredText" validation
+Steps:
+1.type "Recruiter ID" ="12365479", "Suffix" ="22", 
+"Unit ID"="12365479", "Suffix"="22"
+specified fields = "AAAA"
+"Birth Date" = "18.05.1982"
+"Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+9.
+Summary: "RequiredText" validation
+Steps:
+1.type "Recruiter ID" ="12365479", "Suffix" ="22", 
+"Unit ID"="12365479", "Suffix"="22"
+specified fields = "AsDf"
+"Birth Date" = "18.05.1982"
+"Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+10.
+Summary: "RequiredText" validation
+Steps:
+1.type "Recruiter ID" ="12365479", "Suffix" ="22", 
+"Unit ID"="12365479", "Suffix"="22"
+specified fields = "фыва"
+"Birth Date" = "18.05.1982"
+"Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+11.
+Summary: "RequiredText" validation
+Steps:
+1.type "Recruiter ID" ="12365479", "Suffix" ="22", 
+"Unit ID"="12365479", "Suffix"="22"
+specified fields = "ФЫВА"
+"Birth Date" = "18.05.1982"
+"Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+12.
+Summary: "RequiredText" validation
+Steps:
+1.type "Recruiter ID" ="12365479", "Suffix" ="22", 
+"Unit ID"="12365479", "Suffix"="22"
+specified fields = "ФыВа"
+"Birth Date" = "18.05.1982"
+"Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+13.
+Summary: "RequiredText" validation
+Steps:
+1.type "Recruiter ID" ="12365479", "Suffix" ="22", 
+"Unit ID"="12365479", "Suffix"="22"
+specified fields = "<script>alert('123')</script>"
+"Birth Date" = "18.05.1982"
+"Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: incorrect value in "RequiredText" field
+
+14.
+Summary: "RequiredText" validation
+Steps:
+1.type "Recruiter ID" ="12365479", "Suffix" ="22", 
+"Unit ID"="12365479", "Suffix"="22"
+specified fields = "1'; SHOW TABLES;"
+"Birth Date" = "18.05.1982"
+"Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: incorrect value in "RequiredText" field
+
+15.
+Summary: "RequiredText" validation
+Steps:
+1.type "Recruiter ID" ="12365479", "Suffix" ="22", 
+"Unit ID"="12365479", "Suffix"="22"
+specified fields = "<b>Hello</b>"
+"Birth Date" = "18.05.1982"
+"Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: incorrect value in "RequiredText" field
+
+16.
+Summary: "RequiredText" validation
+Steps:
+1.type "Recruiter ID" ="12365479", "Suffix" ="22", 
+"Unit ID"="12365479", "Suffix"="22"
+specified fields = "♣☺♂,“”‘~!@#$%^&*()?>./\<][ /*<!–${code};–>"
+"Birth Date" = "18.05.1982"
+"Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: incorrect value in "RequiredText" field
+
+17.
+Summary: "RequiredText" validation
+Steps:
+1.type "Recruiter ID" ="12365479", "Suffix" ="22", 
+"Unit ID"="12365479", "Suffix"="22"
+specified fields = "         "
+"Birth Date" = "18.05.1982"
+"Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: incorrect value in "RequiredText" field
+
+18.
+Summary: "RequiredText" validation
+Steps:
+1.type "Recruiter ID" ="12365479", "Suffix" ="22", 
+"Unit ID"="12365479", "Suffix"="22"
+specified fields = "  Aleksey  "
+"Birth Date" = "18.05.1982"
+"Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed, "RequiredText" value should be trimmed
+
+19.
+Summary: "RequiredText" validation
+Steps:
+1.type "Recruiter ID" ="12365479", "Suffix" ="22", 
+"Unit ID"="12365479", "Suffix"="22"
+specified fields = "  Aleksey V  "
+"Birth Date" = "18.05.1982"
+"Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed, "RequiredText" value was trimmed result is "Aleksey V"
+
+
+
+--------------------------------------------------------------------------------------
+
+Test Suite for fields: "Title", "Business Name" AS "Text"
+Specification:  max length = 256
+				min length = 1
+				numbers and letters
+				Uppercase and lowercase
+
+1.
+Summary: length "Text" fields(0)
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+specified fields = ""(0)
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+2.
+Summary: length "Text" fields(1)
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+specified fields = "a"(1)
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+3.
+Summary: length "Text" fields(2)
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+specified fields = "aa"(2)
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+4.
+Summary: length "Text" fields(20)
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+specified fields = "asdf..."(20)
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+5.
+Summary: length "Text" fields(255)
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+specified fields = "asdf..."(255)
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+6.
+Summary: length "Text" fields(256)
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+specified fields = "asdf..."(256)
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: incorrect value in "Text" field
+
+7.
+Summary: "Text" validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+specified fields = "asdf1"
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+
+8.
+Summary: "Text" validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+specified fields = "ASDF1"
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+9.
+Summary: "Text" validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+specified fields = "AsDf1"
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+10.
+Summary: "Text" validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+specified fields = "фыва1"
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+11.
+Summary: "Text" validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+specified fields = "ФЫВА1"
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+12.
+Summary: "Text" validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+specified fields = "ФыВа1"
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+13.
+Summary: "Text" validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+specified fields = "<script>alert('123')</script>"
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: incorrect value in "Text" field
+
+14.
+Summary: "Text" validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+specified fields = "1'; SHOW TABLES;"
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: incorrect value in "Text" field
+
+15.
+Summary: "Text" validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+specified fields = "<b>Hello</b>"
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: incorrect value in "Text" field
+
+16.
+Summary: "Text" validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+specified fields = "♣☺♂,“”‘~!@#$%^&*()?>./\<][ /*<!–${code};–>"
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: incorrect value in "Text" field
+
+17.
+Summary: "Text" validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+specified fields = "         "
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: incorrect value in "Text" field
+
+18.
+Summary: "Text" validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+specified fields = "  Aleksey  "
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed, "Text" value should be trimmed
+
+19.
+Summary: "Text" validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+specified fields = "  Aleksey V  "
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed, "Text" value was trimmed result is "Aleksey V"
+
+
+
+--------------------------------------------------------------------------------------
+
+Test Suite for field "Birth Date"
+Specification:  text field
+				format 'dd.mm.yyyy' or 'dd.month.yyyy'
+				max length 17
+				min length 10
+				can't be smaller than 150 years before today
+				can't be biggest than today
+1.
+Summary: length (0)  
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "0"(0)
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: incorrect value in "Birth Date" field, should show advice "Please input date in "dd.mm.yyyy" or "dd.month.yyyy" format"
+
+2.
+Summary: length (1)  
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "1"(1)
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: incorrect value in "Birth Date" field, should show advice "Please input date in "dd.mm.yyyy" or "dd.month.yyyy" format"
+
+3.
+Summary: length (9)  
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "11.02.200"(9)
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: incorrect value in "Birth Date" field, should show advice "Please input date in "dd.mm.yyyy" or "dd.month.yyyy" format"
+
+4.
+Summary: length (10)  
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "11.02.2016"(10)
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+5.
+Summary: length (11)  
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "11.may.2016"(11)
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+6.
+Summary: length (16)  
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "11.february.2016"(16)
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+7.
+Summary: length (17)
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "11.September.2016"(17)
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+8.
+Summary: length (18)
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "11.aSeptember.2016"(18)
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: incorrect value in "Birth Date" field, should show advice "Please input date in "dd.mm.yyyy" or "dd.month.yyyy" format"
+
+9.
+Summary: validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "first.September.2016"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: incorrect value in "Birth Date" field, should show advice "Please input date in "dd.mm.yyyy" or "dd.month.yyyy" format"
+
+10.
+Summary: validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "01.September.twenty eleven"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: incorrect value in "Birth Date" field, should show advice "Please input date in "dd.mm.yyyy" or "dd.month.yyyy" format"
+
+11.
+Summary: validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "SystemDate-150years"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: incorrect value in "Birth Date" field, should show advice "Please input correct value"
+
+12.
+Summary: validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "SystemDate-149years"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+13.
+Summary: validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "01.September.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+14.
+Summary: validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "SystemDate-1day"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+15.
+Summary: validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "SystemDate"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+16.
+Summary: validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "SystemDate+1day"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: incorrect value in "Birth Date" field, should show advice "Please input correct value"
+
+17.
+Summary: validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "20.April.2150"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: incorrect value in "Birth Date" field, should show advice "Please input correct value"
+
+18.
+Summary: validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "<script>alert('123')</script>"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: incorrect value in "Birth Date" field, should show advice "Please input date in "dd.mm.yyyy" or "dd.month.yyyy" format"
+
+19.
+Summary: validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "1'; SHOW TABLES;"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: incorrect value in "Birth Date" field, should show advice "Please input date in "dd.mm.yyyy" or "dd.month.yyyy" format"
+
+20.
+Summary: validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "<b>Hello</b>"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: incorrect value in "Birth Date" field, should show advice "Please input date in "dd.mm.yyyy" or "dd.month.yyyy" format"
+
+21.
+Summary: validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "♣☺♂“”‘~!@#$%^&*()?\<][*!${code};–>"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: incorrect value in "Birth Date" field, should show advice "Please input date in "dd.mm.yyyy" or "dd.month.yyyy" format"
+
+22.
+Summary: validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "         "
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: incorrect value in "Birth Date" field, should show advice "Please input date in "dd.mm.yyyy" or "dd.month.yyyy" format"
+
+23.
+Summary: validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = " 18.05.1982 "
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed, "Birth Date" value should be trimmed
+
+23.
+Summary: validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "18" .,/"05" .,/"1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed, "Birth Date" result should be "18.05.1982"
+
+24.
+Summary: validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "29.02.2016"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+23.
+Summary: validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "29.02.2016"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: incorrect value in "Birth Date" field, should show message "Please input correct date" 
+
+
+
+--------------------------------------------------------------------------------------
+
+Test Suite for field "Postal Code"
+Specification:  text field
+				max length 9
+				min length 4
+				
+1.
+Summary: length(0)
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "18.05.1982", "Street"="Mira", "City" = "Ilyichevsk", 
+"Postal Code"=""(0)
+leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: system alert "Please enter your Postal Code"
+
+2.
+Summary: length(1)
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "18.05.1982", "Street"="Mira", "City" = "Ilyichevsk", 
+"Postal Code"="1"(1)
+leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: system alert "Your Postal Code too short"
+
+3.
+Summary: length(3)
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "18.05.1982", "Street"="Mira", "City" = "Ilyichevsk", 
+"Postal Code"="12y"(3)
+leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: system alert "Your Postal Code too short"
+
+4.
+Summary: length(4)
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "18.05.1982", "Street"="Mira", "City" = "Ilyichevsk", 
+"Postal Code"="12y4"(4)
+leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+5.
+Summary: length(5)
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "18.05.1982", "Street"="Mira", "City" = "Ilyichevsk", 
+"Postal Code"="z05k6"(5)
+leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+6.
+Summary: length(8)
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "18.05.1982", "Street"="Mira", "City" = "Ilyichevsk", 
+"Postal Code"="z05km6d9"(8)
+leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+7.
+Summary: length(9)
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "18.05.1982", "Street"="Mira", "City" = "Ilyichevsk", 
+"Postal Code"="10022SHOE"(9)
+leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+8.
+Summary: length(10)
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "18.05.1982", "Street"="Mira", "City" = "Ilyichevsk", 
+"Postal Code"="10022-SHOE"(10)
+leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: system alert "Your Postal Code too long"
+
+9.
+Summary: validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "18.05.1982", "Street"="Mira", "City" = "Ilyichevsk", 
+"Postal Code"="<script>alert('123')</script>"
+leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: system alert "Please enter your Postal Code"
+
+10.
+Summary: validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "18.05.1982", "Street"="Mira", "City" = "Ilyichevsk", 
+"Postal Code"="1'; SHOW TABLES;"
+leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: system alert "Please enter your Postal Code"
+
+11.
+Summary: validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "18.05.1982", "Street"="Mira", "City" = "Ilyichevsk", 
+"Postal Code"="<b>Hello</b>"
+leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: system alert "Please enter your Postal Code"
+
+12.
+Summary: validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "18.05.1982", "Street"="Mira", "City" = "Ilyichevsk", 
+"Postal Code"="♣☺♂,“”‘~!@#$%^&*()?>./\<][ /*<!–${code};–>"
+leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: system alert "Please enter your Postal Code"
+
+13.
+Summary: validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "18.05.1982", "Street"="Mira", "City" = "Ilyichevsk", 
+"Postal Code"="         "
+leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: system alert "Please enter your Postal Code"
+
+14.
+Summary: validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", 
+"Birth Date" = "18.05.1982", "Street"="Mira", "City" = "Ilyichevsk", 
+"Postal Code"="     1    "
+leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+click "continue" button
+Expected result: system alert "Please enter your Postal Code"
+
+21.00 19.04.2016 Pause
+
+16.00 27.04.2016 Start
+--------------------------------------------------------------------------------------
+
+Test Suite for fields: "Home Phone", "Mobile Phone", "Work Phone", "Other Phone"
+Specification:  numerical fields
+				max length 14
+				min length 14
+
+1.
+Summary: length (0)
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+type "" in the required fields
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+2.
+Summary: length (1)
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+type "0" in the required fields
+click "continue" button
+Expected result: system alert "Please enter correct Phone number"
+
+3.
+Summary: length (13)
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+type "0380932575189" in the required fields
+click "continue" button
+Expected result: system alert "Please enter correct Phone number"
+
+4.
+Summary: length (14)
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+type "00380932575189" in the required fields
+click "continue" button
+Expected result: screen was changed and personal information was confirmed
+
+5.
+Summary: length (15)
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+type "000380932575189" in the required fields
+click "continue" button
+Expected result: system alert "Please enter correct Phone number"
+
+6.
+Summary: validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+type "<script>alert('123')</script>" in the required fields
+click "continue" button
+Expected result: system alert "Please enter correct Phone number"
+
+7.
+Summary: validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+type "1'; SHOW TABLES;" in the required fields
+click "continue" button
+Expected result: system alert "Please enter correct Phone number"
+
+8.
+Summary: validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+type "<b>Hello</b>" in the required fields
+click "continue" button
+Expected result: system alert "Please enter correct Phone number"
+
+9.
+Summary: validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+type "♣☺♂,“”‘~!@#$%^&*()?>./\<][ /*<!–${code};–>" in the required fields
+click "continue" button
+Expected result: system alert "Please enter correct Phone number"
+
+10.
+Summary: validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+type "         " in the required fields
+click "continue" button
+Expected result: system alert "Please enter correct Phone number"
+
+11.
+Summary: validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+type "     1    " in the required fields
+click "continue" button
+Expected result: system alert "Please enter correct Phone number"
+
+10.
+Summary: validation
+Steps:
+1.type "Recruiter ID" = "12365479", "Suffix" = "22", "Unit ID" = "12365479", "Suffix" = "22", "First Name" = "Aleksey", "Last Name"="Gamanchuk", "Birth Date" = "18.05.1982"
+"Street"="Mira", "City" = "Ilyichevsk", "Postal Code"="04868" leave "Czech Republic" value in "Country" droplist
+tick "Yes" in all "Family information" checkboxes
+type " 00380932575189 " in the required fields
+click "continue" button
+Expected result: screen was changed and personal information was confirmed, Phone nummer should be trimmed.
+
+
+
+Other fields testing whit the same tests...
+
+Task 4 
+
