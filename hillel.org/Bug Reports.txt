@@ -1,0 +1,89 @@
+#1
+Summary: opened with common version
+Description: When open the website with a tablet it is opened with common version instead of mobile version.
+Steps to reproduce:
+1. Open Google Chrome browser.
+2. Switch the browser to mobile version.
+3. Open the website choosing iPad or Nexus 10.
+Expected result: The website is opened in mobile version.
+Actual result: The website is opened in common mode.
+Priority: Medium
+Severity: Medium
+
+#2
+Summary: vertical scroll works on the main site page
+Description: Mobile version: when menu is opened vertical scroll works on the main site page, not on the menu
+Steps to reproduce:
+1. Open chrome mobile browser.
+2. Go to the main mobile website page.
+3. Open menu button in the right top corner (on the nav bar).
+4. Scroll down.
+Expected result: scroll works on the menu layout (div).
+Actual result: scroll works to the main page, not on the menu.
+Priority: Medium
+Severity: Medium
+
+#3
+Summary: salaries chart isn't displayed
+Description: When open the website in mobile mode the salaries chart isn't displayed. It isn't displayed because of "display: none" CSS property. But the div with "Выберите свою будущую профессию" title is displayed that doesn't make sense w/o the chart.
+Steps to reproduce:
+1. Open the website in mobile mode.
+2. Scroll to the chart.
+Expected result: The chart is displayed as in common mode (or, as option, we should remove the div with the chart description).
+Actual result: The chart isn't displayed.
+Priority: Medium
+Severity: Medium
+
+#4
+Summary: contacts are missed on the top of main page
+Description: Kharkov's contacts are missed on the top of main page (email and phone) and in the "География школы" section.
+Steps to reproduce:
+1. Open the website.
+2. Mouse over email and then phone on the top of main page.
+3. Scroll to "География школы" section.
+Expected result: In 3 places of 2nd and 3rd steps Kharkov's contacts are displayed too.
+Actual result: Only Odessa, Kiev, Dnepropetrovsk are displayed there.
+Priority: Medium
+Severity: Medium
+
+#5
+Summary: Bug with phone number in the registration form
+Description: phone number not checking in the registration form after input valid number and then delete it 
+Steps to reproduce:
+1. Go to the main mobile website page.
+2. Click on the menu "Записаться на курс" in the right upper corner.
+3.Type the name "user" in the field "Имя", choose the city "Odessa"  in the field "Город", choose the course "PHP" in the field "Курс".
+4.Type the numbers "+380666666666" in the input field "Телефон".
+5.Remove all the characters except the first one ("+") from the field "Телефон".
+6. Click on the button "Зарегистрироваться".
+Expected result: The input in the field "Телефон" is not accepted. The error message is displayed.
+Actual result: The input in the field "Телефон" is accepted. A tick icon is displayed near the field "Телефон", and further registration for a course is permitted.
+Priority: Medium
+Severity: Medium
+
+#6
+Summary: form not clearing after closing this form
+Description: Fields in registration form not clearing after closing this form, this bug repeated in bouth version of product(desctop and mobile)
+Steps to reproduce:
+1. Open main page of the product
+2. click "Записаться на курс" button
+3. type "Vasya" in the "Имя" field
+4. type "1111111111" in the "Телефон" field
+5. close this form
+6. click "Записаться на курс" button
+Expected result: form should be clear
+Actual result: form consider our data
+Priority: Medium
+Severity: Medium
+
+#7
+Summary: website does not adapt
+Description: Open website in the browser, reduce browser window, website does not adapt 
+Step to reproduce:
+1. Open chrome browser.
+2. Open website
+3. Reduce browser window
+Expected result: It appears horizontal scrolling and information websaite active.
+Actual result: The horizontal scroll bar does not appear on. Information website does not adapt in the window browser.
+Priority: Medium
+Severity: Medium
