@@ -1,1 +1,62 @@
-#1
+1.
+Summary: Registration form - able to create account with email which contains only special symbols
+Description: Able to create account with  email which contains only special symbols (for example, ##@gmail.com, ___@gmail.com) using UI account creation form.
+
+Steps to reproduce:
+1. Open http://geekinformer.net/
+2. Click on login button and select "Регистрация"
+3. To field Имя enter "qwerty1"
+4. To field Еmail адрес enter ___@gmail.com
+5. To field Пароль enter password
+6. Click on checkbox Я не робот
+7. Click on button Регистрация
+Expected result:
+Shows message that email is incorrect and account not created
+Actual result:
+Shown window Регистрация прошла успешно
+
+
+2.
+Summary: Wrong size of the button "Netflix" on the main page
+Description: Wrong size of the button "Netflix" on the main page.
+
+Steps to reproduce:
+1. Open the main page.
+2. Look for the list "Последние тренды".
+3. Scroll it to till you find image "Netflix" with button under it.
+Expected result:
+The "Netflix" button has the same size as the ithers in that list.
+Actual result:
+This button is smaller than the others in that list.
+
+
+3.
+Summary: Email with registration does not coming
+Description: Email with registration does not coming
+Steps to reproduce:
+1 Go to Geekinformer.net
+2 Right corner click "Регистрация"
+3 Fill the fields "E-mail адрес" and "Пароль" with valid info
+4 Click "Регистрация"
+Expected result: 
+Letter should come on registered E-mail adress
+Actual result:
+Letter does not coming.
+
+4.
+Summary: Able to create account with incorrect domain name
+Description:Using registration form u able to create account with incorrect domain name(for example: 1@42141wafwaf412414.wqrqrawawfawfawffawf)
+
+Steps to reproduce:
+1. Open http://geekinformer.net/
+2. Click on login button and select "Регистрация"
+3. To field Имя enter qwerty123
+4. To field Еmail адрес enter 1@gaeggaew.geagawwgeaewgagweea
+5. To field Пароль enter password
+6. Click on checkbox Я не робот
+7. Click on button "Регистрация"
+Expected result:
+Shows message that email is incorrect and account not created
+Actual result:
+Shown window Регистрация прошла успешно
+
